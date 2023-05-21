@@ -1,0 +1,8 @@
+binario: Ex5.o Conversor.o
+	gcc Ex5.o Conversor.o -o Ex5 -lm
+
+Ex5.o: Ex5.c
+	gcc -c Ex5.c
+
+Conversor.o : Conversor.c Conversor.h
+	gcc -c Conversor.c
